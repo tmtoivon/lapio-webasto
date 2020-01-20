@@ -3,10 +3,23 @@
 
 <!-- Google HTML styleguide: https://google.github.io/styleguide/htmlcssguide.html -->
 
+<!-- tyyppiselektori -> luokkaselektori -> tunnisteselektori -->
+
 <head>
   <meta charset="utf-8">
   <title>Lapio website</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    h1 {
+	background-color: red;
+    }
+    .health {
+	color: blue;
+    }
+    #important {
+	color: red;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,13 +35,13 @@
   </p>
 
 <ol>
-  <li>Käytä koira aamulenkillä.</li>
+  <li style="color:green;">Käytä koira aamulenkillä.</li>
   <li>Anna koiralle ruokaa, ruoka sisältää:</li>
   <ul>
     <li>150g muroja</li>
-    <li>loraus öljyä</li>
-    <li>mitallinen niveljauhetta</li>
-    <li>mitallinen hammasjauhetta.</li>
+    <li id="important">loraus öljyä</li>
+    <li class="health">mitallinen niveljauhetta</li>
+    <li class="health">mitallinen hammasjauhetta.</li>
   </ul>
   <li>Täytä vesikuppi.</li>
 </ol>
